@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+  <html>
+   <body>
+     <script> 
+       var name = prompt('Введите сюда свое имя', "Введите имя");
+       if(name == "Введите имя"){
+       alert("Вы не ввели свое имя");
+               
+       }
+       else alert('Ваше имя ' + name + '. Очень рады знакомству с Вами!!!');
+            
+       var age = prompt('Сколько Вам лет, если не секрет?', "35 лет");
+       if (isNaN(age)) {
+       alert("Хорошо, пусть это останется Вашим секретом.");
+       exit;
+       }
+       age = Number(age) +10; 
+       alert('Через 10 лет Вам исполнится ' + age + 'лет.');
+            
+       var restart = confirm("Начать заново?");
+       if(restart){
+       location.reload();
+       }
+       if (!restart){
+       exit;
+       }
+      </script>
+   </body>
+ </html>
